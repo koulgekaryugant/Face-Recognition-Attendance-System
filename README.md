@@ -22,3 +22,47 @@ To ensure a seamless installation and setup process for your project on the Wind
 6. **Install Pillow**: Install Pillow, a Python imaging library, which provides image processing capabilities: `pip install pillow`
 
 By completing these steps, you will be well-prepared to start your project and take advantage of the features and functionalities provided by these libraries.
+To install MySQL Workbench and create the necessary tables for your database, follow these steps:
+
+1. **Install MySQL Workbench**:
+   - Download and install MySQL Workbench from the official website: https://dev.mysql.com/downloads/workbench/
+   - Follow the installation instructions provided on the website.
+
+2. **Create the Database**:
+   - Open MySQL Workbench and connect to your MySQL server.
+   - Create a new schema/database for your project. You can do this by right-clicking on the server instance in the Navigator panel and selecting "Create Schema".
+   - Name the schema appropriately, e.g., "attendance_management_system".
+
+3. **Create Tables**:
+   - Here is an example of how you can create three tables for admin login, student registration, and attendance storing:
+
+   **Admin Login Table**:
+   ```sql
+   CREATE TABLE admin (
+       admin_id INT AUTO_INCREMENT PRIMARY KEY,
+       username VARCHAR(50) NOT NULL,
+       password VARCHAR(50) NOT NULL
+   );
+   ```
+
+   **Student Registration Table**:
+   ```sql
+   CREATE TABLE student (
+       student_id INT AUTO_INCREMENT PRIMARY KEY,
+       name VARCHAR(100) NOT NULL,
+       email VARCHAR(100) NOT NULL,
+       phone VARCHAR(20),
+       address VARCHAR(255)
+   );
+   ```
+
+   **Attendance Table**:
+   ```sql
+   CREATE TABLE attendance (
+       attendance_id INT AUTO_INCREMENT PRIMARY KEY,
+       student_id INT,
+       date DATE,
+       status ENUM('Present', 'Absent') NOT NULL
+   );
+   ```
+By following these steps and incorporating professionalism into your database design, you will create a robust and well-structured database that effectively manages admin logins, student registrations, and attendance records.
