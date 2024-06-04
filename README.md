@@ -34,35 +34,5 @@ To install MySQL Workbench and create the necessary tables for your database, fo
    - Name the schema appropriately, e.g., "attendance_management_system".
 
 3. **Create Tables**:
-   - Here is an example of how you can create three tables for admin login, student registration, and attendance storing:
-
-   **Admin Login Table**:
-   ```sql
-   CREATE TABLE admin (
-       admin_id INT AUTO_INCREMENT PRIMARY KEY,
-       username VARCHAR(50) NOT NULL,
-       password VARCHAR(50) NOT NULL
-   );
-   ```
-
-   **Student Registration Table**:
-   ```sql
-   CREATE TABLE student (
-       student_id INT AUTO_INCREMENT PRIMARY KEY,
-       name VARCHAR(100) NOT NULL,
-       email VARCHAR(100) NOT NULL,
-       phone VARCHAR(20),
-       address VARCHAR(255)
-   );
-   ```
-
-   **Attendance Table**:
-   ```sql
-   CREATE TABLE attendance (
-       attendance_id INT AUTO_INCREMENT PRIMARY KEY,
-       student_id INT,
-       date DATE,
-       status ENUM('Present', 'Absent') NOT NULL
-   );
-   ```
+   - create tables for storing the data of attendance,admin,student
 By following these steps and incorporating professionalism into your database design, you will create a robust and well-structured database that effectively manages admin logins, student registrations, and attendance records.
