@@ -1,3 +1,5 @@
+
+https://github.com/koulgekaryugant/face-recognition-attendance-system/assets/120482304/9e92a9ce-d5c7-45b0-9fd6-5cd13671c4ec
 **Face Recognition Attendance System**
 
 The Face Recognition Attendance System is a cutting-edge solution designed to streamline the attendance tracking process in various settings. By utilizing advanced facial recognition technology, this system automates the attendance marking process, eliminating the need for traditional methods such as manual sign-ins or card swipes.
